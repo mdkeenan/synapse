@@ -17,5 +17,6 @@ mcpServers:
     type: "http"
     url: "https://drivemcp.googleapis.com/mcp/v1"
     headers:
-      Authorization: "Bearer ${GOOGLE_WORKSPACE_TOKEN}"
+      Authorization: "Bearer /etc/secrets/google_key.json"
+
 
