@@ -1,0 +1,46 @@
+{
+  "sources": {
+    "logoMaster": "synapse-logo-1024x1024.png",
+    "logoVector": "synapse-logo.svg"
+  },
+  "copies": [
+    {
+      "source": "logoVector",
+      "dest": "client/public/assets/logo.svg"
+    }
+  ],
+  "resizes": [
+    {
+      "source": "logoMaster",
+      "dest": "client/public/assets/favicon-16x16.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "source": "logoMaster",
+      "dest": "client/public/assets/favicon-32x32.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "source": "logoMaster",
+      "dest": "client/public/assets/apple-touch-icon-180x180.png",
+      "width": 180,
+      "height": 180
+    },
+    {
+      "source": "logoMaster",
+      "dest": "client/public/assets/icon-192x192.png",
+      "width": 192,
+      "height": 192
+    },
+    {
+      "source": "logoMaster",
+      "dest": "client/public/assets/maskable-icon.png",
+      "width": 512,
+      "height": 512,
+      "fit": "contain",
+      "background": "#ffffff"
+    }
+  ]
+}

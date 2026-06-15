@@ -1,0 +1,17 @@
+# Local scratch (intermediate exports before copying to client/public/assets)
+brand/exports/
+.tmp/
+
+# Design working files (keep masters in brand/; avoid large layered sources)
+*.psd
+*.xcf
+*.sketch
+*.ai
+
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor backups
+*~
