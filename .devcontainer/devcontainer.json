@@ -10,13 +10,15 @@
         "esbenp.prettier-vscode"
       ],
       "settings": {
+        "git.ignoreFileMode": true,
+        "npm.packageManager": "npm",
         "terminal.integrated.profiles.linux": {
           "bash": null
         }
       }
     }
   },
-  "postCreateCommand": "npm install",
+  "postCreateCommand": "npm install && git config --local core.filemode false",
   "features": { "ghcr.io/devcontainers/features/git:1": {} },
   "remoteUser": "vscode"
 }
