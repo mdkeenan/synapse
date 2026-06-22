@@ -2,9 +2,13 @@
   "dockerComposeFile": "docker-compose.yml",
   "service": "app",
   "workspaceFolder": "/workspaces",
+  "forwardPorts": [3080, 3090],
   "customizations": {
     "vscode": {
-      "extensions": [],
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ],
       "settings": {
         "terminal.integrated.profiles.linux": {
           "bash": null
@@ -12,7 +16,7 @@
       }
     }
   },
-  "postCreateCommand": "",
+  "postCreateCommand": "npm install",
   "features": { "ghcr.io/devcontainers/features/git:1": {} },
   "remoteUser": "vscode"
 }
