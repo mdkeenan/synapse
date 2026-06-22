@@ -3,16 +3,6 @@ cache: true
 
 endpoints:
   custom:
-    - name: "Ollama"
-      apiKey: "ollama"
-      baseURL: "http://host.docker.internal:11434/v1/"
-      models:
-        default:
-          - "llama3.1:8b"
-          - "qwen3:8b"
-        fetch: true
-      titleConvo: true
-      modelDisplayLabel: "Ollama"
     - name: "Perplexity"
       apiKey: "${PERPLEXITY_API_KEY}"
       baseURL: "https://api.perplexity.ai/"

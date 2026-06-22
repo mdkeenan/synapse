@@ -125,13 +125,29 @@ APP_TITLE=Synapse
 
 See [SYNAPSE_CUSTOMIZATION_MAP.md](./SYNAPSE_CUSTOMIZATION_MAP.md) for full branding locations.
 
+## Local Ollama (optional)
+
+Ollama is **local-only** — it is not in tracked `librechat.yaml` (production/Render stays Perplexity-only).
+
+1. Copy the example config:
+
+   ```bash
+   cp librechat.local.example.yaml librechat.local.yaml
+   ```
+
+2. Dev Container sets `CONFIG_PATH=/workspaces/librechat.local.yaml` automatically.
+
+3. Keep Ollama running on Windows (`ollama ps`). Models must match names in the YAML.
+
+4. Restart `npm run backend:dev` after changing the local config.
+
 ## Production vs local
 
 | | Dev Container | Render (`main`) |
 |--|---------------|-----------------|
 | MongoDB | `mongodb://mongodb:27017/...` | Atlas `MONGO_URI` |
 | Meilisearch | In compose | Often unset on free tier |
-| Config | `.env` + optional `librechat.yaml` | Render env vars + `librechat.yaml` in image |
+| Config | `.env` + `librechat.local.yaml` (local) | Render env vars + `librechat.yaml` in image |
 | Deploy | N/A | Auto-deploy from `main` |
 
 ## Troubleshooting
