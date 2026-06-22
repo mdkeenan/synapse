@@ -1,5 +1,7 @@
 # Dev Container (local development)
 
+For how local dev fits with production, Git, Docker, Windows, and Render, see [ENVIRONMENT_ARCHITECTURE.md](./ENVIRONMENT_ARCHITECTURE.md).
+
 Synapse/LibreChat runs in a VS Code Dev Container with MongoDB and Meilisearch on a shared Docker network. Use this setup on Windows (or any host) so native Node bindings match the Linux container.
 
 ## Architecture
